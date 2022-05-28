@@ -1,9 +1,10 @@
 apiVersion: v1
-
 kind: Pod
 metadata:
-  name: my-nginx
+  labels:
+    test: liveness
+  name: liveness-exec
 spec:
   containers:
-    - name  : my-nginx
-      image : ngnix:alpine
+    - name: liveness
+      image: k8s.gcr.io/busybox
