@@ -29,6 +29,12 @@ kubectl proxy
 
 Step 4: Go to Dashboard
 http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/.
+
+
+kubectl get pods
+kubectl get all
+kubectl run my-ngnix --image=ngnix:alpine
+kubectl delete pod my-ngnix
 ```
 
 
