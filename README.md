@@ -43,13 +43,21 @@ Title: Learning kubernetes in a easy way  crash course beginner | Intro Video
 Link:  https://www.youtube.com/watch?v=MQJT9a6I2b8
                 
 
+
+
 Title: Getting started with Kubernetes Crash Course in 45 Minutes for Beginner
 Link:  https://www.youtube.com/watch?v=8re9IMRFO-0
                 
 
+
+
+
+
 Title: Production ready architecture with external and internal Load balancing with Kubernetes | Python
 Link:  https://www.youtube.com/watch?v=UpMa10RgfwU
-                
+        
+        
+ 
 ------------------------- Connect With Me ----------------------------------
 Website : https://soumilshah.herokuapp.com
 
