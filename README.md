@@ -40,6 +40,11 @@ kubectl delete pod my-ngnix
 
 
 
+* Beginners | Learning Kubernetes in Easy way | Probes | Livebness Probe with Demo |#3
+* Resources https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#define-readiness-probes
+
+
+
 * Title: Learning kubernetes in a easy way  crash course beginner | Intro Video
 * Link:  https://www.youtube.com/watch?v=MQJT9a6I2b8
                 
