@@ -24,10 +24,20 @@ Link:  https://www.youtube.com/watch?v=UpMa10RgfwU
                 
 ------------------------- Connect With Me ----------------------------------
 Website : https://soumilshah.herokuapp.com
+
+
 Github : https://github.com/soumilshah1995
+
+
 Linkedin : https://www.linkedin.com/in/shah-soumil/
+
+
 Blog : https://soumilshah1995.blogspot.com/
+
+
 Youtube :  https://www.youtube.com/channel/UC_eOodxvwS_H7x2uLQa-svw?view_as=subscriber
+
+
 Donate Me :  https://www.paypal.com/paypalme/soumilshah1995
 -------------------------------------------------------------------------------
 
