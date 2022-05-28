@@ -12,7 +12,7 @@ learn kuberneteswith soumilshah
 
 
 * Beginners | Learning Kubernetes in Easy way | Commands and Deploying the Dashboard UI |#2
-* Linkhttps://www.youtube.com/watch?v=1Fleff8SrNA
+* Link: https://www.youtube.com/watch?v=1Fleff8SrNA
 
 ```bash
 Install Docker Desktop 
@@ -40,8 +40,30 @@ kubectl delete pod my-ngnix
 
 
 
+* Title : Beginners | Learning Kubernetes in Easy way | Probes | Livebness Probe with Demo |#3
+
+* Link : https://www.youtube.com/watch?v=N_EvPa3gQko
+
+
+
+
+* Beginners | Learning Kubernetes in Easy way | Replicas Set |#4
+* Link: 
+
+#### Helper commands   
+```
+kubectl get rs
+kubectl delete rs XXXXX
+kubectl delete services XXXXX
+
+
+```   
+
+
+=======
 * Beginners | Learning Kubernetes in Easy way | Probes | Livebness Probe with Demo |#3
 * Resources https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#define-readiness-probes
+>>>>>>> b12aa537063eb7fa24a0dd7a1ee57fb7e7e0f9ad
 
 
 
@@ -57,7 +79,10 @@ kubectl delete pod my-ngnix
 * Title: Production ready architecture with external and internal Load balancing with Kubernetes | Python
 * Link:  https://www.youtube.com/watch?v=UpMa10RgfwU
         
-        
+   
+
+     
+     
 ------------------------- Connect With Me ----------------------------------
 
 
