@@ -52,10 +52,13 @@ kubectl delete pod my-ngnix
 
 #### Helper commands   
 ```
+
 kubectl get rs
 kubectl delete rs XXXXX
-kubectl delete services XXXXX
+kubectl delete -f deployment.yml
 
+kubectl scale --replicas=5 -f deployment.yml   ## Scale up
+kubectl scale --replicas=1 -f deployment.yml ## Scale down
 
 ```   
 
