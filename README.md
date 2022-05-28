@@ -60,10 +60,10 @@ kubectl delete services XXXXX
 ```   
 
 
-=======
+
 * Beginners | Learning Kubernetes in Easy way | Probes | Livebness Probe with Demo |#3
 * Resources https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#define-readiness-probes
->>>>>>> b12aa537063eb7fa24a0dd7a1ee57fb7e7e0f9ad
+
 
 
 
