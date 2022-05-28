@@ -2,11 +2,6 @@
 learn kuberneteswith soumilshah
 
 
-
-Beginners | Learning Kubernetes in Easy way | COmmands and Deploying the Dashboard UI |#2
-
-
-
 ------------------------- Watch ----------------------------------
 Beginners | Learning Kubernetes in Easy way | Theory |#1
 https://www.youtube.com/watch?v=h_-lsO1ZIQE&list=PLL2hlSFBmWwx9pdmBesD0fr3e-_aJlYBa&index=1&t=68s
