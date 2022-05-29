@@ -57,10 +57,10 @@ kubectl get rs
 kubectl delete rs XXXXX
 kubectl delete -f deployment.yml
 
-kubectl scale --replicas=5 -f deployment.yml   ## Scale up
-kubectl scale --replicas=1 -f deployment.yml ## Scale down
+kubectl scale --replicas=30 -f deployment.yaml   ## Scale up
+kubectl scale --replicas=1 -f deployment.yaml ## Scale down
 
-```   
+```
 
 
 
