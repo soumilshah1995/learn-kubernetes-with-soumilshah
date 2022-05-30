@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   myapi:
-    build: ./project
+    build: ./
     container_name: myapi
     restart: always
     ports:

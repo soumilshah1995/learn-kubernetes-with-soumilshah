@@ -7,7 +7,7 @@ import random
 
 @app.route("/")
 def hello():
-    _ = random.randint(1,100000)
+    _ = random.randint(1, 100000)
     number = math.sqrt(_)
     return "Hello from Python!" + str(number)
 

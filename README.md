@@ -74,6 +74,7 @@ kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/late
 kubectl get deployment metrics-server -n kube-system
 helm install stable/metrics-server
 kubectl get hpa 
+kubectl delete hpa appdeploy
 
 kubectl autoscale deployment appdeploy --cpu-percent=20 --min=1 --max=10  
 ```
