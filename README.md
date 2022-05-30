@@ -56,10 +56,26 @@ kubectl delete pod my-ngnix
 kubectl get rs
 kubectl delete rs XXXXX
 kubectl delete -f deployment.yml
+kubectl delete deployment XXXX
+kubectl delete deployment XXXX
+
 
 kubectl scale --replicas=30 -f deployment.yaml   ## Scale up
 kubectl scale --replicas=1 -f deployment.yaml ## Scale down
 
+
+Auto Scaling
+kubectl -n kube-system get pods
+kubectl -n kube-system  describe pod XXXXX
+kubectl -n kube-system edit deploy pods
+
+
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+kubectl get deployment metrics-server -n kube-system
+helm install stable/metrics-server
+kubectl get hpa 
+
+kubectl autoscale deployment appdeploy --cpu-percent=20 --min=1 --max=10  
 ```
 
 

@@ -13,9 +13,12 @@ spec:
   selector:
     matchLabels:
       app: flask
-  replicas: 2
+  replicas: 1
   strategy:
     type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
   template:
     metadata:
       labels:
@@ -33,6 +36,13 @@ spec:
               port: 80
             initialDelaySeconds: 2
             periodSeconds: 2
+          resources:
+            requests:
+              memory: "100Mi"
+              cpu: "100m"
+            limits:
+              memory: "300Mi"
+              cpu: "1000m"
 ---
 
 apiVersion: v1
@@ -49,3 +59,4 @@ spec:
   selector:
     app: flask
   type: LoadBalancer
+

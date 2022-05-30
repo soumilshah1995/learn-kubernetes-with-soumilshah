@@ -1,10 +1,15 @@
 from flask import Flask
 app = Flask(__name__)
+import math
+import random
+
 
 
 @app.route("/")
 def hello():
-    return "Hello from Python!"
+    _ = random.randint(1,100000)
+    number = math.sqrt(_)
+    return "Hello from Python!" + str(number)
 
 
 @app.route("/health")

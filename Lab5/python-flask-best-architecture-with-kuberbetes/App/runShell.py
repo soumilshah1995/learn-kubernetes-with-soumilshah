@@ -1,5 +1,6 @@
 import os
 
+
 print(os.popen('echo Starting Build of Docker Images').read())
 
 print(os.popen('docker build -t appdocker .').read())
