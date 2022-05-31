@@ -1,8 +1,3 @@
-
-# =============================================================
-#                 DEPLOYMENT
-# ==============================================================
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -28,6 +23,9 @@ spec:
         - name: appdeploy
           image: appdocker
           imagePullPolicy: Never
+          env:
+            - name: name
+              value: "Hello from the environment"
           ports:
             - containerPort: 80
           livenessProbe:
@@ -43,35 +41,3 @@ spec:
             limits:
               memory: "300Mi"
               cpu: "1000m"
----
-
-apiVersion: v1
-kind: Service
-metadata:
-  name: appdeploy
-  labels:
-    app: flask
-spec:
-  ports:
-    - port: 80
-      protocol: TCP
-      name: flask
-  selector:
-    app: flask
-  type: LoadBalancer
-
----
-apiVersion: autoscaling/v1
-kind: HorizontalPodAutoscaler
-metadata:
-  name: appdeploy
-  labels:
-    app: flask
-spec:
-  scaleTargetRef:
-    apiVersion: apps/v1
-    kind: Deployment
-    name: appdeploy
-  minReplicas: 1
-  maxReplicas: 10
-  targetCPUUtilizationPercentage: 50

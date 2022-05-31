@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: appdeploy
+  labels:
+    app: flask
+spec:
+  ports:
+    - port: 80
+      protocol: TCP
+      name: flask
+  selector:
+    app: flask
+  type: LoadBalancer

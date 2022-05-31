@@ -1,0 +1,7 @@
+bases:
+  - ../../kubernetes
+patches:
+  - replica_count.yaml
+
+
+
