@@ -7,9 +7,14 @@ import os
 
 @app.route("/")
 def hello():
-    _ = random.randint(1, 100000)
-    number = math.sqrt(_)
-    return "Hello from Python! " + str(number) + os.getenv("name", "default")
+
+    _ = {
+        "version":"v1",
+        "computation": str( math.sqrt(random.randint(1, 100000))),
+        "testenv":os.getenv("name", "default")
+
+    }
+    return _
 
 
 @app.route("/health")

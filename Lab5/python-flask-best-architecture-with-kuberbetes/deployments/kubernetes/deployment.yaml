@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: flask
-  replicas: 1
+  replicas: 2
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -23,9 +23,9 @@ spec:
         - name: appdeploy
           image: appdocker
           imagePullPolicy: Never
-          env:
-            - name: name
-              value: "Hello from the environment"
+          envFrom:
+            - configMapRef:
+                name: app-secrets
           ports:
             - containerPort: 80
           livenessProbe:
